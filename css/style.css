@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    height: 100vh;
+}
+
+.content-reminder{
+    height: calc(100vh - 100px);
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    padding: 90px 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    
+}
+
+.editar-task{
+    display: none;
+}
+
+.editar-task.active{
+    position: absolute;
+    width: 500px;
+    height: calc(100vh - 190px);
+   justify-content: center;
+   border-radius: 10px;
+    display: flex;
+    background-color: #fff;
+
+
+}
+
+
+
+.editar-task button{
+    height: 50px;
+    padding: 15px;
+    margin-left: -10px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #FFD700;
+    border-left: none;
+    background-color: #FFD700;
+}
+.editar-task input{
+    width: 60%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px 0px 0px 10px;
+   border: 1px solid #FFD700;
+ 
+}
+.new-task {
+    width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.new-task button{
+    padding: 15px;
+    margin-left: -10px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #FFD700;
+    border-left: none;
+    background-color: #FFD700;
+}
+.new-task input{
+    padding: 15px;
+    border-radius: 10px 0px 0px 10px;
+   border: 1px solid #FFD700;
+ 
+}
+
+
+.content-task{
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    background-color: blue;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.text-task{
+   font-family: 'Anek Tamil', sans-serif;
+   font-weight: bold;
+   color: #fff;
+}
+
+.icons svg{
+    width: 20px;
+    margin-right: 10px;
+  
+}
+
+
