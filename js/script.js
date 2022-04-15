@@ -13,9 +13,10 @@ let contentFull = document.querySelector(".content-full-task")
 const dados = Object.keys(localStorage);
     
 for (let index = 0; index < dados.length; index++) {
+    console.log(dados[0])
     contentFull.innerHTML+=localStorage.getItem(dados[index]);  
 }
-
+deleteTaskContent(dados)
 
 
 newTask.addEventListener("click",() => {
@@ -29,6 +30,30 @@ newTask.addEventListener("click",() => {
         
     }
 
+    deleteTaskContent(dados);
 });
 
+function deleteTaskContent(parametro){
+    for (let index = 0; index < parametro.length; index++) {
+        
+        deleteTask=document.querySelectorAll("#delete");
+        deleteTask[index].addEventListener("click",()=>{
+            console.log(dados[index])
+            localStorage.removeItem(parametro[index])
+            deleteTask[index].parentElement.parentElement.remove();
+            
+        })
+    }
+}
+
+
+
+ 
+
+    
+
+
+
+
+    
    
