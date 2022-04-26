@@ -8,7 +8,7 @@
     font-family: Arial, sans-serif;
 }
 
-.content{
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,63 +16,62 @@
     height: 100vh;
 }
 
-.content-reminder{
+.content-reminder {
     height: calc(100vh - 100px);
     background-color: #fff;
     width: 500px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    
+    overflow-y: scroll;
     flex-direction: column;
     padding: 90px 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
-    
+
 }
 
-.editar-task{
-    display: none;
+.content-full-task {
+    width: 100%;
 }
 
-.editar-task.active{
-    position: absolute;
-    width: 500px;
+.editar-task {
     height: calc(100vh - 190px);
-   justify-content: center;
-   border-radius: 10px;
+    justify-content: center;
+    border-radius: 10px;
     display: flex;
-    background-color: #fff;
-
-
+    background-color: #222;
 }
 
 
-
-.editar-task button{
+.editar-task button {
     height: 50px;
     padding: 15px;
+    margin-top: 30px;
     margin-left: -10px;
     border-radius: 0px 10px 10px 0px;
     border: 1px solid #FFD700;
     border-left: none;
     background-color: #FFD700;
 }
-.editar-task input{
+
+.editar-task input {
     width: 60%;
     height: 50px;
     padding: 15px;
     border-radius: 10px 0px 0px 10px;
-   border: 1px solid #FFD700;
- 
-}
-.new-task {
-    width: 90%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    border: 1px solid #FFD700;
+    margin-top: 30px;
+
 }
 
-.new-task button{
+.new-task {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-task button {
     padding: 15px;
     margin-left: -10px;
     border-radius: 0px 10px 10px 0px;
@@ -80,15 +79,14 @@
     border-left: none;
     background-color: #FFD700;
 }
-.new-task input{
+
+.new-task input {
     padding: 15px;
     border-radius: 10px 0px 0px 10px;
-   border: 1px solid #FFD700;
- 
+    border: 1px solid #FFD700;
 }
 
-
-.content-task{
+.content-task {
     display: flex;
     margin-top: 90px;
     width: 100%;
@@ -100,16 +98,14 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
 }
 
-.text-task{
-   font-family: 'Anek Tamil', sans-serif;
-   font-weight: bold;
-   color: #fff;
+.text-task {
+    font-family: 'Anek Tamil', sans-serif;
+    font-weight: bold;
+    color: #fff;
 }
 
-.icons svg{
+.icones button {
     width: 20px;
     margin-right: 10px;
-  
+    background: none;
 }
-
-
