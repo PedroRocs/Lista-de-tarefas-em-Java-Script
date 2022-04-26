@@ -11,10 +11,12 @@ let contentFull = document.querySelector(".content-full-task");
 
 showData()
 
+// FUNÇÃO PARA GERAR OS ID'S
 function generatorId() {
   return Math.floor(Math.random() * 3000)
 }
 
+// FUNÇÃO PARA CRIAR OBJETO TAREFA.
 newTask.addEventListener("click", (e) => {
   let tarefa= {
     nameTask: inputNew.value,
@@ -23,6 +25,7 @@ newTask.addEventListener("click", (e) => {
   adicionarTarefa(tarefa)
 })
 
+// FUNÇÃO PARA ADICIONAR A TAREFA AO LOCAL STORAGE 
 function adicionarTarefa(tarefa) {
   if (tarefa.nameTask != "") {
     localStorage.setItem(tarefa.id, tarefa.nameTask);
@@ -30,11 +33,13 @@ function adicionarTarefa(tarefa) {
   }
 }
 
+// FUNÇÃO PARA DELETAR A TAREFA DO LOCAL STORAGE.
 function deleteTaskFull(id) {
   localStorage.removeItem(id)
   showData()
 }
 
+// FUNÇÃO PARA EDITAR A TAREFA NO LOCAL STORAGE.
 function editTaskFull(id) {
   content.before(editTask)
   inputEdit.value=localStorage.getItem(id);
@@ -53,7 +58,7 @@ function editTaskFull(id) {
 }
 
 
-
+// FUNÇÃO PARA CRRIAR OS ITEMS DA LISTA NO HTML POR MEIO DO DOM.
 function createLi(tarefa, valor) {
   let li = document.createElement('li');
   li.classList.add('content-task')
@@ -77,6 +82,7 @@ function createLi(tarefa, valor) {
   return li
 }
 
+// FUNÇÃO PARA PEGAR AS INFORMAÇÕES DO LOCAL STORAGE E INSERI-LAS DENTRO DOS ITEMS DA LISTA, QUE IRÃO SE ADICIONADOS AO HTML.
 function showData() {
   contentFull.innerHTML = ""
   let dados = Object.keys(localStorage);
