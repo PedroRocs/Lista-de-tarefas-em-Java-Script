@@ -6,8 +6,8 @@ Um projeto simples onde o usuario tem a possiblidade de criar lembretes de taref
 
 ## LINGUAGENS UTILIZADAS
 <hr>
- - <img  alt="Pedro-HTML" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <b>HTML</b>
- - <img  alt="Pedro-CSS" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <b>CSS</b>
+- <img  alt="Pedro-HTML" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <b>HTML</b>
+- <img  alt="Pedro-CSS" height="60" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <b>CSS</b>
 - <img aalt="Pedro-JS" height="60" width="40" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"> <b>JavaScript</b>
 
 

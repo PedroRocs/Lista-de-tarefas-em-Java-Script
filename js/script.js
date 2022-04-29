@@ -47,11 +47,12 @@ function editTaskFull(id) {
   let keyElementLocalStotage = id;
   buttonEditSend.addEventListener("click", () => {
   
-    if (inputEdit.value != "" && teste != "") {
+    if (inputEdit.value != "" && keyElementLocalStotage != "") {
       localStorage.setItem(keyElementLocalStotage, inputEdit.value);
       inputEdit.value = "";
       keyElementLocalStotage = "";
       content.style.display ="flex";
+      editTask.remove()
       showData()
     }
   })
