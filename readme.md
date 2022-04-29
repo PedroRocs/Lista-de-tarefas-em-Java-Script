@@ -1,5 +1,5 @@
 
-#LISTA DE TAREFAS
+# LISTA DE TAREFAS
 <hr>
 
 Um projeto simples onde o usuario tem a possiblidade de criar lembretes de tarefas. Os quais ele pode editar, caso queira mudar alguma informação, ou depois de ter finalizado a tarefa, deleta-lo.
